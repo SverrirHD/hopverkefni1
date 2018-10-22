@@ -1,1 +1,45 @@
 // TODO stillingar hér
+
+//Starfsmenn
+.starfsmenn {
+    display: flex;
+}
+
+.card-front, .card-back{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	justify-content: space-between;
+}
+
+.card-back p{
+    font-size: 1rem;
+}
+
+.card-back h2{
+    font-size: 1.5rem;
+}
+.card-back {
+	background-color: #ffffff;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.staff__img {
+    max-width: 100%;
+}
+
+/*-------- cards / flip effect --------*/
+.staff:hover .card-front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.staff:hover .card-back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
