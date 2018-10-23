@@ -2,10 +2,12 @@
 .starfsmenn {
     display: flex;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .staff {
     display: flex;
+    justify-content: space-around;
 }
 
 .card-front, .card-back{
