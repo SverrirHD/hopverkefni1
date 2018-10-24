@@ -11,7 +11,8 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   //Font
@@ -19,9 +20,24 @@ html { /* stylelint-disable-line */
   font-family: 'Oswald', Verdana, serif;
 
   // TODO fleiri grunn stillingar
+  font-size: 16px;
+}
+
+main {
+  $max-width: 1200px;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $max-width) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 
-
 // TODO sækja allar sass skrár
-@import "scss/...";
+@import "../scss/headAndFoot.scss";
+
+@import "../scss/item.scss";
