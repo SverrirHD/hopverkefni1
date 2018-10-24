@@ -58,7 +58,7 @@ button {
     max-height: 100%;
 }
 
-/* Stillingar fyrir skjá á bilinu 700px-100px */
+/* Stillingar fyrir skjá á sem er 700px eða stærri */
 @media (min-width: 700px) {
     .items {
         display: flex;
