@@ -1,0 +1,26 @@
+{
+  "name": "hopverkefni1",
+  "version": "0.0.1",
+  "description": "Pakki í hópaverkefni1",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html stylesheets/styles.css",
+    "sass": "node-sass stylesheets/styles.scss stylesheets/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SverrirHD/hopverkefni1.git"
+  },
+  "author": "Pétur Logi Pétursson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SverrirHD/hopverkefni1/issues"
+  },
+  "homepage": "https://github.com/SverrirHD/hopverkefni1#readme"
+}
