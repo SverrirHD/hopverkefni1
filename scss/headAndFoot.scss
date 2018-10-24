@@ -143,19 +143,10 @@ a {
     }
 }
 
-/* \/ \/ Útlit fyrir buttons START \/ \/ */
-.item__select button {
-    background-color: #cc9694;
-    border: none;
-    border-radius: 2px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
-    width: 180px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
-    height: 35px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
-    margin: 30px /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
-}
 
-/* /\ /\ Útlit fyrir buttons  END  /\ /\ */
 
 /* \/ \/ Stillingar fyrir animation á texta START \/ \/ */
+
 .footer__text a {
     color: white;
     transition: 300ms ease-in-out;
@@ -171,6 +162,5 @@ a {
 .header__link a:hover, .header__text a:hover {
     color: white;
 }
-
 
 /* /\ /\ Stillingar fyrir animation á texta END   /\ /\ */
