@@ -27,7 +27,7 @@ main {
   $max-width: 1200px;
   margin: 0 auto;
   max-width: $max-width;
-  padding-left: 20px;
+  padding-left: 20px; 
   padding-right: 20px;
 
   @media (min-width: $max-width) {
@@ -39,5 +39,6 @@ main {
 
 // TODO sækja allar sass skrár
 @import "../scss/headAndFoot.scss";
-
 @import "../scss/item.scss";
+@import "../scss/products.scss";
+@import "../scss/index.scss";
