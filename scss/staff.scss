@@ -1,60 +1,75 @@
-.content-staff{
-    flex-direction: row;
+@import "scss/config";
+/* er kannski að yfirskrifa main annars staðar?*/
+
+
+.staff {
+  &__row {
+    @include row;
+    flex-flow: row wrap;
+  }
+  &__col {
+    @include columns(12);
+
+    @media (min-width: 700px){
+      @include columns(6);
+    }
+  }
 }
 
+/* This container is needed to position the front and back side */
 
+.card {
+  position: relative;
+  overflow: hidden;
+  /*display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d;*/
+  
+  &::before{
+    display: block;
+    padding-top: 150%;
+    content: "";
+  }
 
-/*-------- cards --------*/
-.item--flip {
-    position: initial;
+  &__inner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
     transform-style: preserve-3d;
-    transition: all 300ms ease-in-out;
-    width: 50vw;
+  }
+  
+  &__front {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    padding: 10px;
-}
-
-
-.card-front,
-.card-back {
-	position: initial;
-	margin: 0;
-	transition: transform 0.3s;
-    justify-content: flex-end;
     backface-visibility: hidden;
-}
-
-.card-front{
+  }
+  &__back {
+    position: absolute;
     width: 100%;
     height: 100%;
-}
-
-//Kannski eins og allar aðrar myndir?
-.staff__img {
-    width: 100%;
-}
-
-.card-back{
-    flex-flow: column wrap;
-    align-content: center;
-    width: 100%;
-    height: 60%;
-    text-align: center;
+    backface-visibility: hidden;
+    background-color: dodgerblue;
     color: #000;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+  }
+  &__image {
+    width: 100%;
+  }
+
+  &:hover &__inner{
+    transform: rotateY(180deg);
+  }
 }
 
-.card-back p {
-    margin: 1rem;
-}
+/* Do an horizontal flip when you move the mouse over the flip box container */
 
-
-/*-------- cards / flip effect -------- */
-.item:hover .card-front {
-    transform: rotateY(-180deg);
-    transition-timing-function: ease-in-out;
-}
-.item:hover .card-back {
-    background-color: red;
-    transform: rotateY(0);
-    transition-timing-function: ease-in-out;
-}
+/*.staff__col:hover .card__inner {
+  transform: rotateY(180deg);
+}*/
