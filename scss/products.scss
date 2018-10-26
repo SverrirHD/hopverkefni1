@@ -1,12 +1,15 @@
 @import "scss/config";
 
 .products {
+  margin-top: $gutter;
+  margin-bottom: 3*$gutter;
   &__row {
     @include row;
     flex-flow: row wrap;
   }
 
   &__col {
+    dispaly: flex;
     @include columns(12);
 
     @media (min-width: 600px) {
@@ -20,6 +23,10 @@
 }
 
 .product {
+  display:flex;
+  flex-direction: column;
+  min-height: 100%;
+  
   &__image * {
     width: 100%;
     margin-top: $gutter;
@@ -28,19 +35,42 @@
 
   &__content {
     width: 100%;
+    height:50%;
     font-size: 1.5rem;
+  }
+
+  &__title {
+    font-family: $oswald;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+  }
+
+  &__price {
+    font-family: $oswald;
+    font-weight: 700;
+    font-size: 2rem;
   }
 
   &__button {
     @include buttoncart();
+    width: 45%;
   }
 
   &__select {
+    margin-bottom: 1*$gutter;
     justify-content: space-between;
     display: flex;
   }
 
   &__input {
+    padding-left: $gutter;
+    width: 55%;
     display: inline-block;
     margin: 0;
     font-size: 1rem;
