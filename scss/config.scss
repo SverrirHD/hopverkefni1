@@ -3,6 +3,11 @@
 $max-width: 1200px;
 $gutter: 20px;
 
+$opensans: 'Open Sans', Arial, Helvetica, sans-serif;
+$oswald: 'Oswald', Verdana, serif;
+
+
+
 @mixin row() {
   display: flex;
 

@@ -65,6 +65,10 @@
     width: 100%;
   }
 
+  &__title{
+    font-family: $os
+  }
+
   &:hover &__inner{
     transform: rotateY(180deg);
   }
