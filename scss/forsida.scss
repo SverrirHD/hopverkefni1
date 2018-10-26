@@ -21,6 +21,7 @@
 }
 
 .hlutur {
+  height: auto;
   &__image {
     width: 100%;
     margin-top: 0.5*$gutter;
@@ -35,6 +36,7 @@
     width: 100%;
     margin-top: 0.5*$gutter;
     margin-bottom: 0.5*$gutter;
+    align-items: center;
   }
   &__title {
     font-size: 2.25em;
