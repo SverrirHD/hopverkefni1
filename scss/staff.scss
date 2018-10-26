@@ -60,13 +60,15 @@
     align-content: center;
     transform: rotateY(180deg);
   }
+  &__title{
+    font-family: $oswald;
+  }
+  &__text{
+    font-family: $opensans;
+  }
 
   &__image {
     width: 100%;
-  }
-
-  &__title{
-    font-family: $os
   }
 
   &:hover &__inner{
