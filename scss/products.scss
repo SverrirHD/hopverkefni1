@@ -1,5 +1,4 @@
 @import "scss/config";
-@import "scss/button_cart";
 
 .products {
   &__row {
@@ -21,10 +20,15 @@
 }
 
 .product {
-  & * {
+  &__image *{
     width: 100%;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
   }
-
+  &__content {
+    width: 100%;
+    font-size: 1.5rem;
+  }
   &__button{
       @include buttoncart();
   }
@@ -36,7 +40,7 @@
         display: inline-block;
         border: 1px solid #000;
         border-radius: 5px;
-        padding: 1rem 2rem;
+       // padding: 0;
         margin: 0;
         color: #000;
         font-size: 1rem;
