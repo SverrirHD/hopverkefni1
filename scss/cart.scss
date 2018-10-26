@@ -8,6 +8,7 @@
     &--info{
         justify-content: center;
     }
+    margin-bottom: 2*$gutter;
   }
   &__container {
       width: 100%;
@@ -47,6 +48,14 @@
   &__content {
     width: 100%;
 
+    @media (min-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0.5*$gutter;
+      height: 100%;
+    }
+
     &__top {
       margin-top: 0.5*$gutter;
       margin-bottom: 2*$gutter;
@@ -70,11 +79,13 @@
     @include columns(3);
     border: 1px solid;
     border-radius: 5px;
+    height: 2*$gutter;
   }
 
   &__button {
     @include buttoncart();
-    
+    width: 33.33%;
+    height: 2*$gutter;
   }
 }
 
@@ -88,10 +99,41 @@
     @include columns(4);
   }
 
+  &__content {
+    margin-bottom: 2*$gutter;
+  }
+
   &__text {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+  }
+
+  &__input {
+    width: 66.66%;
+    height: 2*$gutter;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  &__select {
+    width: 66.66%;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  &__card {
+    border: 1px solid;
+    border-radius: 5px;
+  }
+}
+
+.cart {
+  &__button {
+    background-color: #cc9694;
+    border: none;
+    border-radius: 2px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
+    margin-bottom: 2*$gutter;
   }
 }
