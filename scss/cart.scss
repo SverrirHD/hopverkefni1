@@ -19,18 +19,21 @@
       width: 15rem;
       height: 2rem;
   }
+  &__title {
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
+    margin-top: $gutter;
+  }
 }
 
 .vara {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-top: $gutter;
 
-  &__col1 {
-    @include columns(4);
-  }
-
-  &__col2 {
-    @include columns(8);
+  &__col {
+    @include columns(12);
+    margin-bottom: 0.5*$gutter;
   }
 
   &__image {
@@ -50,11 +53,6 @@
   }
 }
 
-.cart__title {
-  padding-right: $gutter;
-  padding-left: $gutter;
-}
-
 .info {
   @include columns(12);
   @media (min-width: 700px) {
@@ -72,3 +70,8 @@
     margin-top: 1rem;
   }
 }
+
+
+//
+//
+//
