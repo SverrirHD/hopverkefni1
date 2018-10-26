@@ -3,46 +3,46 @@
 $max-width: 1200px;
 $gutter: 20px;
 
-$opensans: 'Open Sans', Arial, Helvetica, sans-serif;
-$oswald: 'Oswald', Verdana, serif;
-
-
+$opensans: "Open Sans", "Arial", "Helvetica", "sans-serif";
+$oswald: "Oswald", "Verdana", "serif";
 
 @mixin row() {
   display: flex;
-
   margin-right: -($gutter / 2);
   margin-left: -($gutter / 2);
 }
 
 @mixin columns($col: 1) {
+
   //margföldum með 1% til að breyta gildi í prósentu
   width: ($col / 12 * 100) *1%;
-
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
 }
 
 @mixin buttoncart() {
   display: flex;
+  height: 50px;
+  margin-left: 10px;
+  font-size: 16px;
   flex-direction: row;
   justify-content: left;
-  border: #000000 solid 1px;
+  background-color: #fff;
+  border: #000 solid 1px;
   border-radius: 5px;
-  background-color: #ffffff;
-  margin-left: 10px;
-  height: 50px;
-  font-size: 16px;
+
   &:hover {
-    background: #cc9694;
     color: #000;
+    background: #cc9694;
   }
-  & p {
-    padding-right:0.5*$gutter;
-    padding-left:0.5*$gutter;
+
+  .button__text {
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
     font-family: $opensans
   }
-  & img {
+
+  .button__img {
     height: 25px;
     padding-left:0.5*$gutter;
     padding-right: 0.5*$gutter;
