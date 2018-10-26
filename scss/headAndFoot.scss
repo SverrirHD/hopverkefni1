@@ -13,7 +13,7 @@ a {
 }
 
 .header__title {
-    margin: 30px 0px;
+    margin: 1.5*$gutter 0px;
     font-size: 3.75em;
 }
 
@@ -21,8 +21,8 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20px;
-    max-width: 1200px;
+    margin-bottom: $gutter;
+    max-width: $max-width;
     align-items: center;
 }
 
@@ -30,12 +30,12 @@ a {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
 }
 
 .header__link {
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 0.5*$gutter;
 }
 
 .header__content a {
@@ -49,8 +49,8 @@ a {
 }
 
 .header__image {
-    padding-right: 10px;
-    flex: 0 0 40px;
+    padding-right: 0.5*$gutter;
+    flex: 0 0 2*$gutter;
 }
 
 .footer__container {
@@ -64,9 +64,9 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 10px;
-    padding-left: 10px;
-    max-width: 1200px;
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
+    max-width: $max-width;
     width: 100%;
 }
 
@@ -74,12 +74,12 @@ a {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-top: 50px;
+    margin-top: 2.5*$gutter;
 }
 
 .footer__title {
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: $gutter;
+    margin-left: 0.5*$gutter;
     font-size: 2em;
 }
 
@@ -87,12 +87,12 @@ a {
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: $gutter;
+    margin-left: 0.5*$gutter;
 }
 
 .footer__text {
-    margin-bottom: 10px;
+    margin-bottom: 0.5*$gutter;
     font-size: 1.125em;
 }
 .footer__text a {
@@ -103,7 +103,7 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 40px 0px;
+    margin: 2*$gutter 0px;
 }
 
 /* Stillingar fyrir skjá sem er stærri en 700px */
@@ -116,23 +116,23 @@ a {
     }
 
     .header__links {
-        padding-left: 80px;
+        padding-left: 4*$gutter;
         margin-left: auto;
     }
 
     .header__link {
-        padding-left: 30px;
+        padding-left: 1.5*$gutter;
     }
 
     .header__cart {
-        padding-right: 40px;
+        padding-right: 2*$gutter;
         margin-left: auto;
         
     }
 }
 
 /* Stillingar fyrir skjá sem er 1200px eða stærri */
-@media (min-width: 1200px) {
+@media (min-width: $max-width) {
     .footer__items {
         padding-left: 0px;
         padding-right: 0px;

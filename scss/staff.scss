@@ -21,8 +21,8 @@
 .card {
   position: relative;
   overflow: hidden;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.5*$gutter;
+  margin-bottom: 0.5*$gutter;
   
   &::before{
     display: block;
