@@ -1,0 +1,77 @@
+@import "scss/config";
+
+.header {
+    /*--conteiner tvítekinn???*/
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__content {
+        background-color: #afb281;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: $gutter;
+        max-width: 1200px;
+        align-items: center;
+        @media (min-width: 700px){
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include haus;
+    }
+    
+    &__links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-bottom: 20px;
+        @media (min-width: 700px){
+            padding-left: 3*$gutter;
+            margin-left: auto;
+        }
+    }
+    
+    &__link {
+        font-weight: bold;
+        margin-right: 10px;
+        @media (min-width: 700px){
+            padding-left: $gutter;
+        }
+    }
+    
+    &__content a {
+        color:#000000;
+    }
+    
+    &__cart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media (min-width: 700px){
+            padding-right: 2* $gutter;
+            margin-left: auto;
+        }
+    }
+    
+    &__image {
+        padding-right: 10px;
+        flex: 0 0 40px;
+    }
+
+}
+
+.header__link a, .header__text a {
+    transition: 300ms ease-in-out;
+    color: black;
+}
+.header__link a:hover, .header__text a:hover {
+    color: white;
+}
+
+/* /\ /\ Stillingar fyrir animation á texta END   /\ /\ */
