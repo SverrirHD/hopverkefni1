@@ -1,5 +1,17 @@
 // TODO stillingar hér
+html {
+    /* stylelint-disable-line */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    //Font
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', Verdana, serif;
+  
+    // TODO fleiri grunn stillingar
+    font-size: 16px;
+}
 
+//Stillingar fyrir skölun
 $max-width: 1200px;
 $gutter: 20px;
 
@@ -17,4 +29,35 @@ $gutter: 20px;
     padding-right: $gutter / 2;
     padding-left: $gutter / 2;
 }
+
+//Stillingar fyrir font
+/*
+Leturstærðir:  12    14   16   18      21     24   36    48    60 
+    	í em: 0.75  0.875  1  1.125  1.3125  1.5  2.25    3   3.75
+*/
+$open-sans: 'Open sans', Arial, Helvetica, sans-serif;
+$oswald: 'Oswald', Verdana, serif;
+
+@mixin haus() {
+    font-family: $oswald;
+    font-size: 3.75em;
+    margin: 30px 0px;
+}
+
+@mixin haus-link(){
+    font-family: $oswald;
+    font-size: 3.75em;
+}
+
+@mixin texti {
+
+}
+
+@mixin title {
+    
+}
+@mixin takki {
+    
+}
+
 
