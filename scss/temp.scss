@@ -1,0 +1,28 @@
+
+@media (min-width: 700px) {
+    .item__product {
+        width: 50%;
+        & * {
+            width: 100%;
+            height: auto;
+        }
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image__product {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .content__product {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .item__product {
+        width: 33.3333%;
+    }
+
+}

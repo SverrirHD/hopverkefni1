@@ -1,9 +1,75 @@
+@import "scss/config";
+@import "scss/button_cart";
+
 // Útlit fyrir sérhæfða cart.html hluti
-.cart__title {
-    padding-right: 20px;
-    padding-left: 20px;
+.cart {
+  &__row {
+    @include row;
+    flex-flow: row wrap;
+    &--info{
+        justify-content: center;
+    }
+  }
+  &__container {
+      width: 100%;
+      display:flex;
+      justify-content: center;
+     // align-items: center;
+  }
+  &__button {
+      width: 15rem;
+      height: 2rem;
+  }
 }
 
-.input__cart {
-    width: 33%;
+.vara {
+  display: flex;
+  flex-direction: row;
+
+  &__col1 {
+    @include columns(4);
+  }
+
+  &__col2 {
+    @include columns(8);
+  }
+
+  &__image {
+    width: 100%;
+
+    & * {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__button {
+    @include buttoncart();
+  }
+}
+
+.cart__title {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.info {
+  @include columns(12);
+  @media (min-width: 700px) {
+    @include columns(6);
+  }
+  
+  @media (min-width: 1000px) {
+    @include columns(4);
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
 }

@@ -37,115 +37,124 @@
   </header>
 
   <main>
-    <div class="content">
-      <div class="items">
+    <div class="cart">
+      <div class="cart__row">
         <h1 class="cart__title">Vörur í körfu</h1>
-        <div class="item item__product">
-          <div class="item__image">
-            <img class="image" src="../img/watch.jpg" alt="texti">
-          </div>
-          <div class="item__content">
-            <h1 class="item__title">Ótrúlegt úr</h1>
-            <p class="item__text">
-              Hvað er klukkan? Þetta úr mun svara því hvenær sem er.
-            </p>
-            <h2 class="item__price">99.900 kr.-</h2>
-            <p>Fjöldi:</p>
-            <div class="item__select">
-              <input class="input__cart" type="text" value="1">
-              <button class="button__cart">
-                <img src="../img/cart.svg">
-                Uppfæra
-              </button>
-              <button class="button__cart">
-                <img src="../img/cart.svg">
-                Eyða úr körfu
-              </button>
+        <div class="vara">
+          <div class="vara__col1">
+            <div class="vara__image">
+              <img class="image" src="../img/watch.jpg" alt="texti">
             </div>
           </div>
-        </div>
-        <div class="item item__product">
-          <div class="item__image">
-            <img class="image" src="../img/headphones.jpg" alt="texti">
-          </div>
-          <div class="item__content">
-              <h1 class="item__title">Hágæða heyrnatól</h1>
-              <p class="item__text">
-                Þú munt ekki heyra neitt nema hágæða tólnist með þessum hágæða heyrnatólum. Höfum við minnst á að þau eru hágæða?
+          <div class="vara__col2">
+            <div class="vara__content">
+              <h1 class="vara__title">Ótrúlegt úr</h1>
+              <p class="vara__text">
+                Hvað er klukkan? Þetta úr mun svara því hvenær sem er.
               </p>
-              <h2 class="item__price">39.999 kr.-</h2>
-              <div class="item__select">
-                <form class="item__form">
-                  <input type="text" value="2">
-                </form>
-                <button class="button__cart">
+              <h2 class="vara__price">99.900 kr.-</h2>
+              <p>Fjöldi:</p>
+              <div class="vara__select">
+                <input class="vara__input" type="text" value="1">
+                <button class="vara__button">
                   <img src="../img/cart.svg">
                   Uppfæra
                 </button>
-                <button>
+                <button class="vara__button">
                   <img src="../img/cart.svg">
                   Eyða úr körfu
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="vara">
+          <div class="vara__col1">
+            <div class="vara__image">
+              <img class="image" src="../img/headphones.jpg" alt="texti">
+            </div>
+          </div>
+          <div class="vara__col2">
+            <div class="vara__content">
+              <h1 class="vara__title">Hágæða heyrnatól</h1>
+              <p class="vara__text">
+                Þú munt ekki heyra neitt nema hágæða tólnist með þessum hágæða heyrnatólum. Höfum við minnst á að þau
+                eru
+                hágæða?
+              </p>
+              <h2 class="vara__price">39.999 kr.-</h2>
+              <p>Fjöldi:</p>
+              <div class="vara__select">
+                <input type="text" value="2">
+                <button class="vara__button">
+                  <img src="../img/cart.svg">
+                  Uppfæra
+                </button>
+                <button class="vara__button">
+                  <img src="../img/cart.svg">
+                  Eyða úr körfu
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="info">
-        <div class="info__item">
+      <div class="cart__row cart__row--info">
+        <div class="info">
           <h1 class="info__title">Sendingarupplýsingar</h1>
-            <div class="info__content">
-              <p class="info__text">
-                Nafn:
-              </p>
+          <div class="info__content">
+            <div class="info__text">
+              <p>Nafn:</p>
               <input class="info__input" type="text">
-              <p class="info__text">
-                Heimilisfang:
-              </p>
+            </div>
+            <div class="info__text">
+              <p>Heimilisfang:</p>
               <input class="info__input" type="text">
-              <p class="info__text">
-                Póstnúmer:
-              </p>
-              <div class="info__input">
+            </div>
+            <div class="info__text">
+              <p>Póstnúmer:</p>
               <select>
                 <option>-Velja póstnúmer-</option>
               </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="info__item">
-            <h1 class="info__title">Greiðsluupplýsingar</h1>
-              <div class="info__content">
-                  <p class="info__text">
-                      Kortanúmer:
-                  </p>
-                  <input class="info__input" type="text">
-                  <p class="info__text">
-                    Korthafi:
-                  </p>
-                  <input class="info__input" type="text">
-                  <p class="info__text">
-                    Gildistími:
-                  </p>
-                  <div class="info__input">
-                    <p>Mán</p>
-                    <select>
-                      <option>1</option>
-                    </select>
-                    <p>Ár</p>
-                    <select>
-                      <option>2018</option>
-                    </select>
-                  </div>
-              </div>
-              </div>
             </div>
           </div>
         </div>
-        <button class="info__submit">
-          Kaupa
-        </button>
+        <div class="info">
+          <h1 class="info__title">Greiðsluupplýsingar</h1>
+          <div class="info__content">
+            <div class="info__text">
+              <p>Kortanúmer:</p>
+              <input class="info__input" type="text">
+            </div>
+
+            <div class="info__text">
+              <p>Korthafi:</p>
+              <input class="info__input" type="text">
+            </div>
+
+            <div class="info__text">
+              <p>Gildistími:</p>
+              <p>Mán</p>
+              <select>
+                <option>1</option>
+              </select>
+              <p>Ár</p>
+              <select>
+                <option>2018</option>
+              </select>
+            </div>
+            <div class="info__input">
+
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="cart__container">
+          <button class="cart__button">
+              Kaupa
+            </button>
+      </div>
+      
   </main>
 
   <footer>
