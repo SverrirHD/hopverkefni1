@@ -12,23 +12,21 @@
 }
 
 html {
-  /* stylelint-disable-line */
+  /* stylelint-disable-line  */
   box-sizing: border-box;
   overflow-x: hidden;
   //Font
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-family: 'Oswald', Verdana, serif;
 
+  font-family: $oswald;
+  font-family: $opensans;
   // TODO fleiri grunn stillingar
   font-size: 16px;
 }
-
 main {
-  $max-width: 1200px;
   margin: 0 auto;
   max-width: $max-width;
-  padding-left: 20px; 
-  padding-right: 20px;
+  padding-left: $gutter; 
+  padding-right: $gutter;
 
   @media (min-width: $max-width) {
     padding-left: 0px;
@@ -36,11 +34,9 @@ main {
   }
 }
 
-
 // TODO sækja allar sass skrár
 @import "../scss/headAndFoot.scss";
 @import "../scss/forsida.scss";
 @import "../scss/staff.scss";
 @import "../scss/products.scss";
-//@import "../scss/index.scss";
 @import "../scss/cart.scss";

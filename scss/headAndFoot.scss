@@ -1,16 +1,16 @@
 @import "scss/config";
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* Default stillingar eru fyrir skjá sem er minni en 700px */
+/*  Default stillingar eru fyrir skjá sem er minni en 700px  */
 .header__container {
-    display: flex;
-    flex-direction: column;
-    background-color: #afb281;
-    
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #afb281;
+
+  align-items: center;
 }
 
 .header__title {
@@ -18,149 +18,155 @@ a {
 }
 
 .header__content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px;
-    max-width: 1200px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: $gutter;
+  max-width: $max-width;
+  align-items: center;
 }
 
 .header__links {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: $gutter;
 }
 
 .header__link {
     font-weight: bold;
-    margin-right: 10px;
+    font-family: $oswald;
+    margin-right: 0.5*$gutter;
 }
 
 .header__content a {
-    color:#000000;
+  color: #000;
 }
 
 .header__cart {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header__image {
-    padding-right: 10px;
-    flex: 0 0 40px;
+  padding-right: 0.5*$gutter;
+  flex: 0 0 2*$gutter;
 }
 
 .footer__container {
-    display: flex;
-    flex-direction: row;
-    background-color: #cc9694;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #cc9694;
+  justify-content: center;
 }
 
 .footer__items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-right: 10px;
-    padding-left: 10px;
-    max-width: 1200px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 0.5*$gutter;
+  padding-left: 0.5*$gutter;
+  max-width: $max-width;
+  width: 100%;
 }
 
 .footer__item {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 2.5*$gutter;
 }
 
 .footer__title {
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: $gutter;
+    margin-left: 0.5*$gutter;
     font-size: 2em;
+    font-family: $oswald;
 }
 
-.footer__content{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-bottom: 20px;
-    margin-left: 10px;
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: $gutter;
+  margin-left: 0.5*$gutter;
 }
 
 .footer__text {
-    margin-bottom: 10px;
+    margin-bottom: 0.5*$gutter;
     font-size: 1.125em;
+    font-family: $oswald;
 }
+
 .footer__text a {
-    color: #fcffd2;
+  color: #fcffd2;
 }
 
 .footer__trademark {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 40px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 2*$gutter 0px;
 }
 
-/* Stillingar fyrir skjá sem er stærri en 700px */
+/*  Stillingar fyrir skjá sem er stærri en 700px  */
 
-/* Stillingar fyrir skjá á bilinu 700px-100px */
+/*  Stillingar fyrir skjá á bilinu 700px-100px  */
 @media (min-width: 700px) {
-    .header__content {
-        flex-direction: row;
-        justify-content: center;
-    }
+  .header__content {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .header__links {
-        padding-left: 80px;
-        margin-left: auto;
-    }
+  .header__links {
+    padding-left: 4*$gutter;
+    margin-left: auto;
+  }
 
-    .header__link {
-        padding-left: 30px;
-    }
+  .header__link {
+    padding-left: 1.5*$gutter;
+  }
 
-    .header__cart {
-        padding-right: 40px;
-        margin-left: auto;
-        
-    }
+  .header__cart {
+    padding-right: 2*$gutter;
+    margin-left: auto;
+
+  }
 }
 
-/* Stillingar fyrir skjá sem er 1200px eða stærri */
-@media (min-width: 1200px) {
-    .footer__items {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+/*  Stillingar fyrir skjá sem er 1200px eða stærri  */
+@media (min-width: $max-width) {
+  .footer__items {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-    .footer__item {
-        width: 25%;
-    }
+  .footer__item {
+    width: 25%;
+  }
 }
 
-
-
-/* \/ \/ Stillingar fyrir animation á texta START \/ \/ */
+/*  \/ \/ Stillingar fyrir animation á texta START \/ \/  */
 
 .footer__text a {
-    color: white;
-    transition: 300ms ease-in-out;
+  color: white;
+  transition: 300ms ease-in-out;
 }
+
 .footer__text:hover a {
-    color: black;
+  color: black;
 }
 
-.header__link a, .header__text a {
-    transition: 300ms ease-in-out;
-    color: black;
-}
-.header__link a:hover, .header__text a:hover {
-    color: white;
+.header__link a,
+.header__text a {
+  transition: 300ms ease-in-out;
+  color: black;
 }
 
-/* /\ /\ Stillingar fyrir animation á texta END   /\ /\ */
+.header__link a:hover,
+.header__text a:hover {
+  color: white;
+}
+
+/*  /\ /\ Stillingar fyrir animation á texta END   /\ /\  */

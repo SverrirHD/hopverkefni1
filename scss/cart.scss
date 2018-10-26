@@ -1,74 +1,101 @@
 @import "scss/config";
-@import "scss/button_cart";
 
 // Útlit fyrir sérhæfða cart.html hluti
 .cart {
   &__row {
     @include row;
     flex-flow: row wrap;
-    &--info{
-        justify-content: center;
+
+    &--info {
+      justify-content: center;
     }
   }
+
   &__container {
-      width: 100%;
-      display:flex;
-      justify-content: center;
-     // align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    // align-items: center;
   }
+
   &__button {
-      width: 15rem;
-      height: 2rem;
+    width: 15rem;
+    height: 2rem;
+  }
+
+  &__title {
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
+    margin-top: $gutter;
   }
 }
 
 .vara {
   display: flex;
-  flex-direction: row;
+  margin-top: $gutter;
+  flex-direction: column;
 
-  &__col1 {
-    @include columns(4);
-  }
-
-  &__col2 {
-    @include columns(8);
+  &__col {
+    @include columns(12);
+    margin-bottom: 0.5*$gutter;
   }
 
   &__image {
     width: 100%;
 
-    & * {
+    * {
       width: 100%;
     }
   }
 
   &__content {
     width: 100%;
+
+    &__top {
+      margin-top: 0.5*$gutter;
+      margin-bottom: 2*$gutter;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5*$gutter;
+  }
+
+  &__price {
+    margin-bottom: 0.5*$gutter;
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__input {
+    @include columns(3);
+    border: 1px solid;
+    border-radius: 5px;
   }
 
   &__button {
     @include buttoncart();
+    
   }
-}
-
-.cart__title {
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .info {
   @include columns(12);
+
   @media (min-width: 700px) {
     @include columns(6);
   }
-  
+
   @media (min-width: 1000px) {
     @include columns(4);
   }
 
   &__text {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-top: 1rem;
   }
