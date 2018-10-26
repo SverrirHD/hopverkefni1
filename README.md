@@ -1,4 +1,19 @@
+* Til að keyra verkefnið skal farar í command promt og finna verkefnamöppu. Þegar komið er inn í verkefnamöppu skal sklá inn skipuinan "npm install". Næst skal skrifa "npm run dev" og þá keyrist skripta sem keyrir browser-sync og node-sass. Það gæti verið að það þurfi að vista styles.scss skránna til þess að node-sass keyrist og búi til styles.css.
 
+* Verkefninu er aðallega skipt upp í meginmöppuna "hopverkefni 1" en síðan er html síður fyrir utan index síðu að finna í "pages" möppu. Í "stylesheets" möppunni er að finna grid.css og styles.scss en í þessa möppu vistast síðan styles.css. Í möppu sem heitir "scss" er að finna allar þær scss skrár sem styles.scss notar. Allar scss skránnar eru skrifaðar eftir stylelint-config-primer.
+
+* Verkefnið var unnið af eftirfarandi aðilum, hér koma HÍ mail og github nöfn
+Sverrir Heiðar Davíðsson (shd4@hi.is) SverrirH
+Pétur Logi Pétursson (plp2@hi.is) PeturLogi
+Sigurður Andri Jóhannesson (saj48@hi.is) boxandri
+
+Linkur inná uglu heimasvæði sem inniheldur verkefnið: https://notendur.hi.is/~shd4/vefforritun/hopverkefni1/?fbclid=IwAR1e747zfNiLrHixbzt-q4VRsn0_ES9Ij0wAayM81wNdNZ4TRetRVRkt8Lo
+
+
+
+
+
+#######################################################################################################################################
 # Hópverkefni 1
 
 Verkefnið felst í því að smíða vef eftir forskrift.
