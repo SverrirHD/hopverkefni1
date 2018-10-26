@@ -40,10 +40,11 @@ $oswald: 'Oswald', Verdana, serif;
   & p {
     padding-right:0.5*$gutter;
     padding-left:0.5*$gutter;
-    word-wrap: normal;
+    font-family: $opensans
   }
   & img {
     height: 25px;
     padding-left:0.5*$gutter;
+    padding-right: 0.5*$gutter;
   }
 }

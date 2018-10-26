@@ -55,14 +55,18 @@
   }
 }
 
-.button__index {
+.button {
+  &__index {
   background-color: #cc9694;
   border: none;
-  border-radius: 2px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
+  border-radius: 5px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
   width: 180px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
   height: 35px; /* ATH ÞETTA ER EKKI ENDILEGA RÉTT */
+  }
+
   &:hover{
     background-color: #000;
     color: #cc9694;
   }
 }
+
