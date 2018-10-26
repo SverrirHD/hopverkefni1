@@ -39,11 +39,12 @@ $oswald: "Oswald", "Verdana", "serif";
   .button__text {
     padding-right: 0.5*$gutter;
     padding-left: 0.5*$gutter;
-    word-wrap: normal;
+    font-family: $opensans
   }
 
   .button__img {
     height: 25px;
-    padding-left: 0.5*$gutter;
+    padding-left:0.5*$gutter;
+    padding-right: 0.5*$gutter;
   }
 }

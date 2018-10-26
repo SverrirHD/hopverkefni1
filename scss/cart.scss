@@ -50,10 +50,35 @@
 
   &__content {
     width: 100%;
+
+    &__top {
+      margin-top: 0.5*$gutter;
+      margin-bottom: 2*$gutter;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5*$gutter;
+  }
+
+  &__price {
+    margin-bottom: 0.5*$gutter;
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__input {
+    @include columns(3);
+    border: 1px solid;
+    border-radius: 5px;
   }
 
   &__button {
     @include buttoncart();
+    
   }
 }
 

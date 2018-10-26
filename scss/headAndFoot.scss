@@ -12,8 +12,9 @@ a {
 }
 
 .header__title {
-  margin: 1.5*$gutter 0px;
-  font-size: 3.75em;
+    margin: 1.5*$gutter 0px;
+    font-size: 3.75em;
+    font-family: $oswald;
 }
 
 .header__content {
@@ -33,8 +34,9 @@ a {
 }
 
 .header__link {
-  font-weight: bold;
-  margin-right: 0.5*$gutter;
+    font-weight: bold;
+    font-family: $oswald;
+    margin-right: 0.5*$gutter;
 }
 
 .header__content a {
@@ -77,9 +79,10 @@ a {
 }
 
 .footer__title {
-  margin-bottom: $gutter;
-  margin-left: 0.5*$gutter;
-  font-size: 2em;
+    margin-bottom: $gutter;
+    margin-left: 0.5*$gutter;
+    font-size: 2em;
+    font-family: $oswald;
 }
 
 .footer__content {
@@ -91,8 +94,9 @@ a {
 }
 
 .footer__text {
-  margin-bottom: 0.5*$gutter;
-  font-size: 1.125em;
+    margin-bottom: 0.5*$gutter;
+    font-size: 1.125em;
+    font-family: $oswald;
 }
 
 .footer__text a {
