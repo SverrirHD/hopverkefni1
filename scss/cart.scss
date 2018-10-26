@@ -5,21 +5,25 @@
   &__row {
     @include row;
     flex-flow: row wrap;
-    &--info{
-        justify-content: center;
+
+    &--info {
+      justify-content: center;
     }
     margin-bottom: 2*$gutter;
   }
+
   &__container {
-      width: 100%;
-      display:flex;
-      justify-content: center;
-     // align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    // align-items: center;
   }
+
   &__button {
-      width: 15rem;
-      height: 2rem;
+    width: 15rem;
+    height: 2rem;
   }
+
   &__title {
     padding-right: 0.5*$gutter;
     padding-left: 0.5*$gutter;
@@ -29,8 +33,8 @@
 
 .vara {
   display: flex;
-  flex-direction: column;
   margin-top: $gutter;
+  flex-direction: column;
 
   &__col {
     @include columns(12);
@@ -40,7 +44,7 @@
   &__image {
     width: 100%;
 
-    & * {
+    * {
       width: 100%;
     }
   }
@@ -91,10 +95,11 @@
 
 .info {
   @include columns(12);
+
   @media (min-width: 700px) {
     @include columns(6);
   }
-  
+
   @media (min-width: 1000px) {
     @include columns(4);
   }
@@ -104,12 +109,11 @@
   }
 
   &__text {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-top: 1rem;
   }
-
   &__input {
     width: 66.66%;
     height: 2*$gutter;
@@ -137,3 +141,4 @@
     margin-bottom: 2*$gutter;
   }
 }
+
